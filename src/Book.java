@@ -93,6 +93,17 @@ class BookBuilder{
 
         return bookBuilder;
     }
+    public static BookBuilder buildPrice(int id,int pageNumber,String name,double price){
+        BookBuilder bookBuilder=new BookBuilder();
+        bookBuilder.id=id;
+        bookBuilder.pageNumber=pageNumber;
+        bookBuilder.name=name;
+        bookBuilder.price=price;
+
+
+        return bookBuilder;
+    }
+
 
     public BookBuilder setDefaultBookMarker(boolean defaultBookMarker) {
         this.defaultBookMarker = defaultBookMarker;

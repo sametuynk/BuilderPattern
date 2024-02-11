@@ -9,9 +9,12 @@ public class Main {
         //Default özellikler + book marker özelliğines sahip kitap;
         Book book3 = BookBuilder.startBuild(3, 140, "Psycho").setDefaultBookMarker(true).build();
 
+        Book book4=BookBuilder.buildPrice(4,345,"Tutunamayanlar",179.99).build();
+
         //Kitap özelliklerini görüntüleme;
         System.out.println(book1.toString()+"\n");
         System.out.println(book2.toString()+"\n");
-        System.out.println(book3.toString());
+        System.out.println(book3.toString()+"\n");
+        System.out.println(book4.toString());
     }
 }
